@@ -1,0 +1,24 @@
+---- Kádár Kristóf Szoft A2 ----- A-1.sor 5.oszlop
+
+
+Kérdés:
+	Összesen mennyi napernyőt szállítottak már ki évente?
+
+Lekérdezés:
+
+SELECT rs.kelt, SUM(menny) AS össz_kissz
+FROM rend_tétel rd
+INNER JOIN cikk ck ON rd.cikkszám=ck.cikkszám
+INNER JOIN rendelés rs ON rd.rendszám=rs.rendszám
+WHERE ck.elnevezés="napernyő"
+
+-rossz a főtábla
+-a napernyő egy szűrés, nem arra keresunk
+-inner join-okat 2esével zárójelbe tenni
+
+
+
+
+Másik kérdések:
+---Mekkora értékű az idén elsőként kiküldött csomag?
+------Mennyit rendeltek az egyes vevők a legolcsóbb szalmakalapból?
