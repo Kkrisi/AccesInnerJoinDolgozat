@@ -22,3 +22,6 @@ WHERE ck.elnevezés="napernyő"
 Másik kérdések:
 ---Mekkora értékű az idén elsőként kiküldött csomag?
 ------Mennyit rendeltek az egyes vevők a legolcsóbb szalmakalapból?
+
+	+ hány nap alatt teljesítették az egyes rendeléseket?
+	+ hány nappja várja a megrendelő a megrendelt, ki nem szállított tételt?
